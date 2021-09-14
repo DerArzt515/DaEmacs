@@ -1,0 +1,5 @@
+(load "~/.daEmacs/confs/ui/all-the-icons/all-the-icons.el")
+(load "~/.daEmacs/confs/ui/theme/theme-conf.el")
+(load "~/.daEmacs/confs/ui/doom-modeline/doom-modeline-conf.el")
+(load "~/.daEmacs/confs/ui/dashboard/dashboard-conf.el")
+(load "~/.daEmacs/confs/ui/treemacs/treemacs-conf.el")
