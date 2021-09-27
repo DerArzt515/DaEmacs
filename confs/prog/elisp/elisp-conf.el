@@ -9,3 +9,9 @@
 ;;				    "m" '(:ignore t :which-key "elisp-stuff")
 ;;				    "ms" '(evil-save :which-key "save")
 ;;				    )))
+
+(use-package paredit
+  :ensure t
+  :hook emacs-lisp-mode
+  :config (enable-paredit-mode)
+  )

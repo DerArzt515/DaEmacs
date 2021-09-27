@@ -16,7 +16,7 @@
 (use-package company
   :ensure t
   :diminish
-  :hook (scala-mode . company-mode)
+  :hook (prog-mode . company-mode)
   :config (setq lsp-completion-provider :capf))
 
 (use-package lsp-treemacs

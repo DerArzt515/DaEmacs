@@ -30,3 +30,4 @@
 (load "~/.daEmacs/confs/standard/projectile/projectile-conf.el")
 (load "~/.daEmacs/confs/standard/magit/magit-conf.el")
 (load "~/.daEmacs/confs/standard/term/term-conf.el")
+(load "~/.daEmacs/confs/standard/org/org-conf.el")
