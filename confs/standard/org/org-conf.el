@@ -56,7 +56,7 @@
    
    ;; Table ;;
    "t" '(:ignore t :which-key "table")
-   "tc" '(org-insert-new-table :which-key "insert new table")
+   "tc" '(org-table-create :which-key "insert new table")
    "tn" '(:ignore t :which-key "go next")
    "tnr" '(org-table-next-row :which-key "next row")
    "tnf" '(org-table-next-field :which-key "next field")
@@ -85,11 +85,9 @@
    "tmcl" '(:ignore t :which-key "move column left")
    "tmch" '(:ignore t :which-key "move column left (vim bind)")
 
-
-
-
    "i" '(:ignore t :which-key "insert")
    "il" '(org-insert-link :which-key "link")
+   "it" '(org-insert-structure-template :which-key "template block")
    )
 )
 
