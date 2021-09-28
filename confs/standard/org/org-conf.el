@@ -1,4 +1,4 @@
-defun org-insert-new-table ()
+(defun org-insert-new-table ()
   "Create a 1 column two row table with a heading"
   (interactive)
   (insert "|---|\n|   |\n|---|\n|   |")
@@ -39,6 +39,8 @@ defun org-insert-new-table ()
   (global-leader
    :major-modes '(org-mode)
    :keymaps '(org-mode-map)
+
+   ;; Navigation ;;
    "n" '(:ignore t :which-key "navigation")
    "nn" '(:ignore t :which-key "next")
    "nnl" '(org-next-link :which-key "link")
@@ -52,6 +54,7 @@ defun org-insert-new-table ()
    "npb" '(org-previous-block :which-key "block")
    "nph" '(org-previous-visible-heading :which-key "visible heading")
    
+   ;; Table ;;
    "t" '(:ignore t :which-key "table")
    "tc" '(org-insert-new-table :which-key "insert new table")
    "tn" '(:ignore t :which-key "go next")
@@ -59,6 +62,7 @@ defun org-insert-new-table ()
    "tnf" '(org-table-next-field :which-key "next field")
 
 
+   ;; Table insert;;
    "ti" '(:ignore t :which-key "insert")
    "tic" '(org-table-insert-column :which-key "insert column left")
    "tir" '(org-table-insert-row :which-key "insert row above")
@@ -66,6 +70,20 @@ defun org-insert-new-table ()
    "td"  '(:ignore t :which-key "delete")
    "tdc" '(org-table-delete-column :which-key "delete column")
    "tdr" '(evil-delete-whole-line :which-key "delete row")
+
+   ;; Table Move ;;
+   "tm" '(:ignore t :which-key "move")
+   "tmr" '(:ignore t :which-key "move row")
+   "tmru" '(org-table-move-row-up :which-key "move row up")
+   "tmrk" '(org-table-move-row-up :which-key "move row up (vim bind)")
+   "tmrd" '(org-table-move-row-down :which-key "move row down")
+   "tmrj" '(org-table-move-row-down :which-key "move row down (vim bind)")
+
+   "tmc" '(:ignore t :which-key "move column")
+   "tmcr" '(:ignore t :which-key "move column right")
+   "tmcl" '(:ignore t :which-key "move column right (vim bind)")
+   "tmcl" '(:ignore t :which-key "move column left")
+   "tmch" '(:ignore t :which-key "move column left (vim bind)")
 
 
 
