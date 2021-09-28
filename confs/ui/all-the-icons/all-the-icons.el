@@ -6,4 +6,5 @@
 ;; 
 ;; to get the fonts installed
 
-(use-package all-the-icons)
+(use-package all-the-icons
+  :ensure t)
